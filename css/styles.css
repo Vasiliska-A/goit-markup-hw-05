@@ -744,6 +744,56 @@ section {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: transform 250ms var(--time-function);
+
+  padding: 63px 24px;
+  margin: 0;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  text-align: left;
+  text-decoration: none;
+  color: var(--white-text-background-color);
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
+.project-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+/* .overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: transform 250ms var(--time-function);
+} */
+
+.project-item:hover .overlay-text {
+  transform: translateY(0);
+}
+
 .portfolio-link {
   text-decoration: none;
 }
